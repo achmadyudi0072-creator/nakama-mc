@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin | NAKAMA MC</title>
+  <link rel="stylesheet" href="css/nakama-style.css">
+</head>
+<body>
+
+<header class="header">
+  <h2>DASHBOARD ADMIN</h2>
+  <button class="btn secondary" onclick="logout()">LOGOUT</button>
+</header>
+
+<section class="content">
+  <h3>Tambah Produk</h3>
+  <input type="text" id="pname" placeholder="Nama Produk">
+  <input type="text" id="pcat" placeholder="Kategori">
+  <input type="number" id="pprice" placeholder="Harga">
+  <button class="btn primary" onclick="addProduct()">TAMBAH</button>
+
+  <hr>
+
+  <h3>Order Masuk</h3>
+  <div id="orderList"></div>
+</section>
+
+<script src="js/firebase-config.js"></script>
+<script src="js/discord.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

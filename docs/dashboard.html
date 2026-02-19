@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | NAKAMA MC</title>
+  <link rel="stylesheet" href="css/nakama-style.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="assets/images/logo-nakama.png" class="logo small">
+  <h2>DASHBOARD MEMBER</h2>
+  <button class="btn secondary" onclick="logout()">LOGOUT</button>
+</header>
+
+<section class="content">
+  <h3>Selamat datang, <span id="userName"></span></h3>
+
+  <div class="menu-grid">
+    <a href="products.html" class="menu-card">PRODUK KOMUNITAS</a>
+    <a href="sales.html" class="menu-card">INPUT PEMBELIAN</a>
+    <a href="recap.html" class="menu-card">RIWAYAT</a>
+  </div>
+</section>
+
+<script src="js/firebase-config.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
